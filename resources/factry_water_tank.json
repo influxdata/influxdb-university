@@ -1,0 +1,1616 @@
+{
+ "meta": {
+  "version": "1",
+  "type": "dashboard",
+  "name": "Factry Water Tank-Template",
+  "description": "template created from dashboard: Factry Water Tank"
+ },
+ "content": {
+  "data": {
+   "type": "dashboard",
+   "attributes": {
+    "name": "Factry Water Tank",
+    "description": ""
+   },
+   "relationships": {
+    "label": {
+     "data": []
+    },
+    "cell": {
+     "data": [
+      {
+       "type": "cell",
+       "id": "0476990bcb896000"
+      },
+      {
+       "type": "cell",
+       "id": "047699a782dde000"
+      },
+      {
+       "type": "cell",
+       "id": "04769ae915896000"
+      },
+      {
+       "type": "cell",
+       "id": "04769b7d2f30a000"
+      },
+      {
+       "type": "cell",
+       "id": "04769d82319de000"
+      },
+      {
+       "type": "cell",
+       "id": "04769dac20dd2000"
+      },
+      {
+       "type": "cell",
+       "id": "04769dd118374000"
+      },
+      {
+       "type": "cell",
+       "id": "04769deaae4b5000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e10acbac000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e2cf83ac000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e3eb4c85000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e4ed7b33000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e6157ec3000"
+      },
+      {
+       "type": "cell",
+       "id": "04769e757d8d4000"
+      },
+      {
+       "type": "cell",
+       "id": "047e57ea987ac000"
+      },
+      {
+       "type": "cell",
+       "id": "047e6ebc6d096000"
+      },
+      {
+       "type": "cell",
+       "id": "047e6f872d9d2000"
+      },
+      {
+       "type": "cell",
+       "id": "047e6fac7ab74000"
+      }
+     ]
+    },
+    "variable": {
+     "data": []
+    }
+   }
+  },
+  "included": [
+   {
+    "id": "0476990bcb896000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 0,
+     "w": 3,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "0476990bcb896000"
+      }
+     }
+    }
+   },
+   {
+    "id": "047699a782dde000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 4,
+     "w": 3,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "047699a782dde000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769ae915896000",
+    "type": "cell",
+    "attributes": {
+     "x": 4,
+     "y": 2,
+     "w": 2,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769ae915896000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769b7d2f30a000",
+    "type": "cell",
+    "attributes": {
+     "x": 4,
+     "y": 5,
+     "w": 2,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769b7d2f30a000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769d82319de000",
+    "type": "cell",
+    "attributes": {
+     "x": 4,
+     "y": 0,
+     "w": 2,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769d82319de000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769dac20dd2000",
+    "type": "cell",
+    "attributes": {
+     "x": 6,
+     "y": 0,
+     "w": 2,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769dac20dd2000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769dd118374000",
+    "type": "cell",
+    "attributes": {
+     "x": 8,
+     "y": 0,
+     "w": 2,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769dd118374000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769deaae4b5000",
+    "type": "cell",
+    "attributes": {
+     "x": 10,
+     "y": 0,
+     "w": 2,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769deaae4b5000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e10acbac000",
+    "type": "cell",
+    "attributes": {
+     "x": 6,
+     "y": 2,
+     "w": 2,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e10acbac000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e2cf83ac000",
+    "type": "cell",
+    "attributes": {
+     "x": 8,
+     "y": 2,
+     "w": 2,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e2cf83ac000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e3eb4c85000",
+    "type": "cell",
+    "attributes": {
+     "x": 10,
+     "y": 2,
+     "w": 2,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e3eb4c85000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e4ed7b33000",
+    "type": "cell",
+    "attributes": {
+     "x": 6,
+     "y": 5,
+     "w": 2,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e4ed7b33000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e6157ec3000",
+    "type": "cell",
+    "attributes": {
+     "x": 8,
+     "y": 5,
+     "w": 2,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e6157ec3000"
+      }
+     }
+    }
+   },
+   {
+    "id": "04769e757d8d4000",
+    "type": "cell",
+    "attributes": {
+     "x": 10,
+     "y": 5,
+     "w": 2,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "04769e757d8d4000"
+      }
+     }
+    }
+   },
+   {
+    "id": "047e57ea987ac000",
+    "type": "cell",
+    "attributes": {
+     "x": 3,
+     "y": 5,
+     "w": 1,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "047e57ea987ac000"
+      }
+     }
+    }
+   },
+   {
+    "id": "047e6ebc6d096000",
+    "type": "cell",
+    "attributes": {
+     "x": 3,
+     "y": 0,
+     "w": 1,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "047e6ebc6d096000"
+      }
+     }
+    }
+   },
+   {
+    "id": "047e6f872d9d2000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 2,
+     "w": 3,
+     "h": 2
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "047e6f872d9d2000"
+      }
+     }
+    }
+   },
+   {
+    "id": "047e6fac7ab74000",
+    "type": "cell",
+    "attributes": {
+     "x": 3,
+     "y": 2,
+     "w": 1,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "047e6fac7ab74000"
+      }
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "0476990bcb896000",
+    "attributes": {
+     "name": "Fill Level of City Water Tank",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"city_water\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": true
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "047699a782dde000",
+    "attributes": {
+     "name": "Pump Speed",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"pump_speed\")\n  |> filter(fn: (r) => r._field == \"value\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": true
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769ae915896000",
+    "attributes": {
+     "name": "Fill Level of Tank A1",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"A1\")\n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769b7d2f30a000",
+    "attributes": {
+     "name": "Flow Rate Valve V1",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V1\")\n  |> last()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769d82319de000",
+    "attributes": {
+     "name": "Current Status of Valve V1",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V1\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#DC4E58",
+        "name": "fire",
+        "value": 0
+       },
+       {
+        "id": "c2262598-8681-4ad8-91e9-113e3890fa49",
+        "type": "text",
+        "hex": "#4ED8A0",
+        "name": "rainforest",
+        "value": 1
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769dac20dd2000",
+    "attributes": {
+     "name": "Current Status of Valve V2",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V2\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#DC4E58",
+        "name": "fire",
+        "value": 0
+       },
+       {
+        "id": "6cd6fd35-31eb-4b21-9122-ce7539a361ac",
+        "type": "text",
+        "hex": "#4ED8A0",
+        "name": "rainforest",
+        "value": 1
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769dd118374000",
+    "attributes": {
+     "name": "Current Status of Valve V3",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V3\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#DC4E58",
+        "name": "fire",
+        "value": 0
+       },
+       {
+        "id": "89e41d81-f18f-42ba-9982-d5196eff8c29",
+        "type": "text",
+        "hex": "#4ED8A0",
+        "name": "rainforest",
+        "value": 1
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769deaae4b5000",
+    "attributes": {
+     "name": "Current Status of Valve V4",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V4\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#DC4E58",
+        "name": "fire",
+        "value": 0
+       },
+       {
+        "id": "1dcd8816-6c80-4b08-adf2-6feb0f966c95",
+        "type": "text",
+        "hex": "#4ED8A0",
+        "name": "rainforest",
+        "value": 1
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e10acbac000",
+    "attributes": {
+     "name": "Fill Level of Tank A2",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"A2\")  \n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e2cf83ac000",
+    "attributes": {
+     "name": "Fill Level of Tank B1",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"B1\")\n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e3eb4c85000",
+    "attributes": {
+     "name": "Fill Level of Tank B2",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"B2\")\n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "30281674-783a-46d5-a9c6-4dd37f3f29e1",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "1ef6e541-2ef3-4bc5-9e78-b6efc00a0eb4",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "6c7f8ef2-baa9-4a76-bf3b-fb783d5eee88",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e4ed7b33000",
+    "attributes": {
+     "name": "Flow Rate Valve V2",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V2\")\n  |> last()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e6157ec3000",
+    "attributes": {
+     "name": "Flow Rate Valve V3",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V3\")\n  |> last()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "04769e757d8d4000",
+    "attributes": {
+     "name": "Flow Rate Valve V4",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V4\")\n  |> last()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "047e57ea987ac000",
+    "attributes": {
+     "name": "Total flow rate",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> last()  \n  |> group()\n  |> sum(column: \"_value\")\n  \n\n",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "047e6ebc6d096000",
+    "attributes": {
+     "name": "Open valve(s)",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))  \n  |> group()  \n  |> sum(column: \"_value\")  \n",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "suffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#00C9FF",
+        "name": "laser",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "047e6f872d9d2000",
+    "attributes": {
+     "name": "Level difference every minute",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "actualMeanLevel = from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"city_water\")\n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)\n  \n  \npreMeanLevel = actualMeanLevel\n  |> timeShift(duration: -1m)\n\njoin(\n  tables: {pre:preMeanLevel, actual:actualMeanLevel},\n  on: [\"_time\"]\n) |> map(fn: (r) => ({\n    _time: r._time,\n    _value:  r._value_pre - r._value_actual\n    }))\n",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "7df46936-cb17-4be7-816c-7ed74dc82938",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "c6902053-eda6-48c0-a0c1-2a7f8ab6fa36",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "7497c168-d3a0-4066-8e69-fd75eda21ab9",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "047e6fac7ab74000",
+    "attributes": {
+     "name": "",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": []
+          }
+         ],
+         "functions": [],
+         "aggregateWindow": {
+          "period": "auto"
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "legend": {},
+      "geom": "line",
+      "colors": [
+       {
+        "id": "7df46936-cb17-4be7-816c-7ed74dc82938",
+        "type": "scale",
+        "hex": "#31C0F6",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "c6902053-eda6-48c0-a0c1-2a7f8ab6fa36",
+        "type": "scale",
+        "hex": "#A500A5",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       },
+       {
+        "id": "7497c168-d3a0-4066-8e69-fd75eda21ab9",
+        "type": "scale",
+        "hex": "#FF7E27",
+        "name": "Nineteen Eighty Four",
+        "value": 0
+       }
+      ],
+      "note": ".",
+      "showNoteWhenEmpty": true,
+      "xColumn": "",
+      "yColumn": "",
+      "shadeBelow": false
+     }
+    }
+   }
+  ]
+ },
+ "labels": []
+}
