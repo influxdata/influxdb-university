@@ -621,8 +621,8 @@ from(bucket: "training")
     }))
 ```
 
-####Fill Levels
-#####Fill Level of Tank A1
+#### Fill Levels
+##### Fill Level of Tank A1
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -632,7 +632,7 @@ from(bucket: "training")
   |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)
 ```
 
-#####Fill Level of Tank A2
+##### Fill Level of Tank A2
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -642,7 +642,7 @@ from(bucket: "training")
   |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)
 ```
 
-#####Fill Level of Tank B1
+##### Fill Level of Tank B1
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -652,7 +652,7 @@ from(bucket: "training")
   |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)
 ```
 
-#####Fill Level of Tank B2
+##### Fill Level of Tank B2
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -662,8 +662,8 @@ from(bucket: "training")
   |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)
 ```
 
-####Flow Rates
-####Flow Rate Valve V1
+#### Flow Rates
+#### Flow Rate Valve V1
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -673,7 +673,7 @@ from(bucket: "training")
   |> last()
 ```
 
-####Flow Rate Valve V2
+#### Flow Rate Valve V2
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -683,7 +683,7 @@ from(bucket: "training")
   |> last()
 ```
 
-####Flow Rate Valve V3
+#### Flow Rate Valve V3
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -693,7 +693,7 @@ from(bucket: "training")
   |> last()
 ```
 
-####Flow Rate Valve V4
+#### Flow Rate Valve V4
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
