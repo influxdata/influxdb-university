@@ -167,49 +167,33 @@ h_join
 
 ## Alerts and Task
 
-### z-score computation task
+### Task example
+
 ```
-import "date"
-import "math"
-
-option v = {bucket: "", timeRangeStart: -15m, timeRangeStop: now()}
-option task = {name: "Zscore of sensor observations", every: 5m}
-
-movingAvg = from(bucket: "training")
-	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
-	|> aggregateWindow(every: 5m, fn: mean, createEmpty: false)
-	|> filter(fn: (r) =>
-		(r._stop != r._time))
-	|> drop(columns: ["_start", "_stop", "host"])
-
-movingStddev = from(bucket: "training")
-	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
-	|> aggregateWindow(every: 5m, fn: stddev, createEmpty: false)
-	|> filter(fn: (r) =>
-		(r._stop != r._time))
-	|> drop(columns: ["_start", "_stop", "host"])
-
-join1 = join(tables: {avg: movingAvg, stddev: movingStddev}, on: ["_field", "_measurement", "sensor"], method: "inner")
-	|> filter(fn: (r) =>
-		(r._time_avg == r._time_stddev))
-	|> rename(columns: {_time_avg: "_time"})
-	|> drop(columns: ["_time_stddev"])
-
-allData = from(bucket: "training")
-	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
-	|> drop(columns: ["_start", "_stop", "host"])
-
-join2 = join(tables: {all: allData, j: join1}, on: ["_field", "_measurement", "sensor"])
-	|> filter(fn: (r) =>
-		(uint(v: r._time_all) - uint(v: r._time_j) > 0))
-	|> filter(fn: (r) =>
-		(uint(v: r._time_all) - uint(v: r._time_j) <= 5 * 60 * 1000000000))
-	|> rename(columns: {_time_all: "_time"})
-	|> map(fn: (r) =>
-		({r with _value: math.abs(x: (r._value - r._value_avg) / r._value_stddev)}))
-
-join2
-	|> to(bucket: "task-output", org: "emanuele.dellavalle@quantiaconsulting.com")
+from(bucket: "training")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r["_measurement"] == "iot-oven")
+  |> filter(fn: (r) => r["_field"] == "temperature")
+  |> filter(fn: (r) => r["sensor"] == "S1")
+  |> aggregateWindow(every: 30s, fn: mean) //downsample deck 03 slide 60
+```
+```
+from(bucket: "training")
+|> range(start: -30s)
+|> filter(fn: (r) => (r._measurement == "iot-oven"))
+|> filter(fn: (r) => (r._field == "temperature"))
+|> filter(fn: (r) => (r.sensor == "S1"))
+|> mean()
+```
+```
+from(bucket: "training")
+|> range(start: -30s)
+|> filter(fn: (r) => (r._measurement == "iot-oven"))
+|> filter(fn: (r) => (r._field == "temperature"))
+|> mean()
+|> map(fn: (r) => ({r with _time: r._stop}))
+|> map(fn: (r) => ({r with _field: "AvgTemperatureEvery30s"}))
+|> to(bucket: "training", org: "…@quantiaconsulting.com")
 ```
 
 ## Advanced Flux
@@ -272,3 +256,48 @@ from(bucket: "training")
 ```
 
 **NOTE** use `withFit: false` to hide the fitted data
+
+### z-score computation task
+```
+import "date"
+import "math"
+
+option v = {bucket: "", timeRangeStart: -15m, timeRangeStop: now()}
+option task = {name: "Zscore of sensor observations", every: 5m}
+
+movingAvg = from(bucket: "training")
+	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+	|> aggregateWindow(every: 5m, fn: mean, createEmpty: false)
+	|> filter(fn: (r) =>
+		(r._stop != r._time))
+	|> drop(columns: ["_start", "_stop", "host"])
+
+movingStddev = from(bucket: "training")
+	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+	|> aggregateWindow(every: 5m, fn: stddev, createEmpty: false)
+	|> filter(fn: (r) =>
+		(r._stop != r._time))
+	|> drop(columns: ["_start", "_stop", "host"])
+
+join1 = join(tables: {avg: movingAvg, stddev: movingStddev}, on: ["_field", "_measurement", "sensor"], method: "inner")
+	|> filter(fn: (r) =>
+		(r._time_avg == r._time_stddev))
+	|> rename(columns: {_time_avg: "_time"})
+	|> drop(columns: ["_time_stddev"])
+
+allData = from(bucket: "training")
+	|> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+	|> drop(columns: ["_start", "_stop", "host"])
+
+join2 = join(tables: {all: allData, j: join1}, on: ["_field", "_measurement", "sensor"])
+	|> filter(fn: (r) =>
+		(uint(v: r._time_all) - uint(v: r._time_j) > 0))
+	|> filter(fn: (r) =>
+		(uint(v: r._time_all) - uint(v: r._time_j) <= 5 * 60 * 1000000000))
+	|> rename(columns: {_time_all: "_time"})
+	|> map(fn: (r) =>
+		({r with _value: math.abs(x: (r._value - r._value_avg) / r._value_stddev)}))
+
+join2
+	|> to(bucket: "task-output", org: "emanuele.dellavalle@quantiaconsulting.com")
+```

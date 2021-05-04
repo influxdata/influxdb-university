@@ -66,8 +66,8 @@ iot-oven,sensor=S2 temperature=105,humidity=60 1619006685000000000
 ``` 
 
 **Note: Time Range**
-> Start Time: 2021-04-20 12:00:00 GMT (2021-04-21T12:00:00Z)
-> End Time: 2021-04-20 12:10:00 GMT (2021-04-21T12:05:00Z)
+> Start Time: 2021-04-21 12:00:00 GMT (2021-04-21T12:00:00Z)
+> End Time: 2021-04-21 12:05:00 GMT (2021-04-21T12:05:00Z)
 
 ## First Query (DEMO)
 
@@ -147,8 +147,9 @@ from(bucket: "training")
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
-|> group(columns: ["_field"])
-|> mean()
+  |> filter(fn: (r) => r._measurement == "iot-oven")
+  |> group(columns: ["_field"])
+  |> mean()
 ```
 
 ### Selector (last) - Extract the last humidity observation and the last temperature observation from the cooking base area
@@ -163,6 +164,9 @@ from(bucket: "training")
   |> group(columns: ["_field"])
   |> last()
 ```
+
+LIVE: show tail(n: 2) and discuss that selector might return more than one raw per table.
+LIVE: show that |> group( columns: []) creates one single table (mention in the slide?)
 
 ## 06 - aggregateWindow
 ### Extract the moving average temperature observed in the cooking base area over a window of 2 minutes (DEMO)
@@ -185,8 +189,8 @@ from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
   |> filter(fn: (r) => r._measurement == "iot-oven")
   |> filter(fn: (r) => r._field == "temperature")
-  |> filter(fn: (r) => r.sensor == "S1")
-  |> aggregateWindow(every: 2m, fn: mean, createEmpty: false)
+  |> filter(fn: (r) => r.sensor == "S2")
+  |> aggregateWindow(every: 3m, fn: mean, createEmpty: false)
 ```
 
 ### Extract the moving average temperature observed by S2 over a window of 3 minutes (hands-on)
