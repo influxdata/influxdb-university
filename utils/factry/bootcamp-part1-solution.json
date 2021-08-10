@@ -2,14 +2,14 @@
  "meta": {
   "version": "1",
   "type": "dashboard",
-  "name": "Factry Water Tank - part2-Template",
-  "description": "template created from dashboard: Factry Water Tank - part2"
+  "name": "Factry Water Tank - part1-Template",
+  "description": "template created from dashboard: Factry Water Tank - part1"
  },
  "content": {
   "data": {
    "type": "dashboard",
    "attributes": {
-    "name": "Factry Water Tank - part2",
+    "name": "Factry Water Tank - part1",
     "description": ""
    },
    "relationships": {
@@ -20,75 +20,75 @@
      "data": [
       {
        "type": "cell",
-       "id": "059c339865af7000"
+       "id": "05948fa651507000"
       },
       {
        "type": "cell",
-       "id": "059c33986b6f7000"
+       "id": "05948fa659d07000"
       },
       {
        "type": "cell",
-       "id": "059c339873af7000"
+       "id": "05948fa662107000"
       },
       {
        "type": "cell",
-       "id": "059c33987b2f7000"
+       "id": "05948fa669107000"
       },
       {
        "type": "cell",
-       "id": "059c3398806f7000"
+       "id": "05948fa671d07000"
       },
       {
        "type": "cell",
-       "id": "059c3398886f7000"
+       "id": "05948fa67a507000"
       },
       {
        "type": "cell",
-       "id": "059c3398916f7000"
+       "id": "05948fa682d07000"
       },
       {
        "type": "cell",
-       "id": "059c3398972f7000"
+       "id": "05948fa68c107000"
       },
       {
        "type": "cell",
-       "id": "059c33989eef7000"
+       "id": "05948fa694907000"
       },
       {
        "type": "cell",
-       "id": "059c3398a6af7000"
+       "id": "05948fa69c107000"
       },
       {
        "type": "cell",
-       "id": "059c3398acaf7000"
+       "id": "05948fa6a5107000"
       },
       {
        "type": "cell",
-       "id": "059c3398b4af7000"
+       "id": "05948fa6ae107000"
       },
       {
        "type": "cell",
-       "id": "059c3398bc6f7000"
+       "id": "05948fa6b6d07000"
       },
       {
        "type": "cell",
-       "id": "059c3398c2af7000"
+       "id": "05948fa6c0507000"
       },
       {
        "type": "cell",
-       "id": "059c3398caaf7000"
+       "id": "05948fa6c8907000"
       },
       {
        "type": "cell",
-       "id": "059c3398d2af7000"
+       "id": "05948fa6d0507000"
       },
       {
        "type": "cell",
-       "id": "059c3398d8af7000"
+       "id": "05948fa6d9107000"
       },
       {
        "type": "cell",
-       "id": "059c3398e06f7000"
+       "id": "05948fa6e1d07000"
       }
      ]
     },
@@ -99,7 +99,7 @@
   },
   "included": [
    {
-    "id": "059c339865af7000",
+    "id": "05948fa651507000",
     "type": "cell",
     "attributes": {
      "x": 0,
@@ -111,13 +111,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c339865af7000"
+       "id": "05948fa651507000"
       }
      }
     }
    },
    {
-    "id": "059c33986b6f7000",
+    "id": "05948fa659d07000",
     "type": "cell",
     "attributes": {
      "x": 0,
@@ -129,13 +129,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c33986b6f7000"
+       "id": "05948fa659d07000"
       }
      }
     }
    },
    {
-    "id": "059c339873af7000",
+    "id": "05948fa662107000",
     "type": "cell",
     "attributes": {
      "x": 4,
@@ -147,13 +147,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c339873af7000"
+       "id": "05948fa662107000"
       }
      }
     }
    },
    {
-    "id": "059c33987b2f7000",
+    "id": "05948fa669107000",
     "type": "cell",
     "attributes": {
      "x": 6,
@@ -165,13 +165,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c33987b2f7000"
+       "id": "05948fa669107000"
       }
      }
     }
    },
    {
-    "id": "059c3398806f7000",
+    "id": "05948fa671d07000",
     "type": "cell",
     "attributes": {
      "x": 4,
@@ -183,13 +183,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398806f7000"
+       "id": "05948fa671d07000"
       }
      }
     }
    },
    {
-    "id": "059c3398886f7000",
+    "id": "05948fa67a507000",
     "type": "cell",
     "attributes": {
      "x": 4,
@@ -201,13 +201,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398886f7000"
+       "id": "05948fa67a507000"
       }
      }
     }
    },
    {
-    "id": "059c3398916f7000",
+    "id": "05948fa682d07000",
     "type": "cell",
     "attributes": {
      "x": 8,
@@ -219,13 +219,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398916f7000"
+       "id": "05948fa682d07000"
       }
      }
     }
    },
    {
-    "id": "059c3398972f7000",
+    "id": "05948fa68c107000",
     "type": "cell",
     "attributes": {
      "x": 10,
@@ -237,13 +237,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398972f7000"
+       "id": "05948fa68c107000"
       }
      }
     }
    },
    {
-    "id": "059c33989eef7000",
+    "id": "05948fa694907000",
     "type": "cell",
     "attributes": {
      "x": 8,
@@ -255,13 +255,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c33989eef7000"
+       "id": "05948fa694907000"
       }
      }
     }
    },
    {
-    "id": "059c3398a6af7000",
+    "id": "05948fa69c107000",
     "type": "cell",
     "attributes": {
      "x": 6,
@@ -273,13 +273,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398a6af7000"
+       "id": "05948fa69c107000"
       }
      }
     }
    },
    {
-    "id": "059c3398acaf7000",
+    "id": "05948fa6a5107000",
     "type": "cell",
     "attributes": {
      "x": 10,
@@ -291,13 +291,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398acaf7000"
+       "id": "05948fa6a5107000"
       }
      }
     }
    },
    {
-    "id": "059c3398b4af7000",
+    "id": "05948fa6ae107000",
     "type": "cell",
     "attributes": {
      "x": 6,
@@ -309,13 +309,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398b4af7000"
+       "id": "05948fa6ae107000"
       }
      }
     }
    },
    {
-    "id": "059c3398bc6f7000",
+    "id": "05948fa6b6d07000",
     "type": "cell",
     "attributes": {
      "x": 8,
@@ -327,13 +327,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398bc6f7000"
+       "id": "05948fa6b6d07000"
       }
      }
     }
    },
    {
-    "id": "059c3398c2af7000",
+    "id": "05948fa6c0507000",
     "type": "cell",
     "attributes": {
      "x": 10,
@@ -345,13 +345,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398c2af7000"
+       "id": "05948fa6c0507000"
       }
      }
     }
    },
    {
-    "id": "059c3398caaf7000",
+    "id": "05948fa6c8907000",
     "type": "cell",
     "attributes": {
      "x": 2,
@@ -363,13 +363,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398caaf7000"
+       "id": "05948fa6c8907000"
       }
      }
     }
    },
    {
-    "id": "059c3398d2af7000",
+    "id": "05948fa6d0507000",
     "type": "cell",
     "attributes": {
      "x": 2,
@@ -381,13 +381,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398d2af7000"
+       "id": "05948fa6d0507000"
       }
      }
     }
    },
    {
-    "id": "059c3398d8af7000",
+    "id": "05948fa6d9107000",
     "type": "cell",
     "attributes": {
      "x": 0,
@@ -399,13 +399,13 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398d8af7000"
+       "id": "05948fa6d9107000"
       }
      }
     }
    },
    {
-    "id": "059c3398e06f7000",
+    "id": "05948fa6e1d07000",
     "type": "cell",
     "attributes": {
      "x": 2,
@@ -417,14 +417,14 @@
      "view": {
       "data": {
        "type": "view",
-       "id": "059c3398e06f7000"
+       "id": "05948fa6e1d07000"
       }
      }
     }
    },
    {
     "type": "view",
-    "id": "059c339865af7000",
+    "id": "05948fa651507000",
     "attributes": {
      "name": "Pump Speed",
      "properties": {
@@ -478,21 +478,21 @@
       "geom": "line",
       "colors": [
        {
-        "id": "0673bbc0-dd5a-42c0-ad96-c83e805477c0",
+        "id": "096e817b-be5b-4db6-8100-f9b8bd0e915b",
         "type": "scale",
         "hex": "#FD7A5D",
         "name": "Delorean",
         "value": 0
        },
        {
-        "id": "6456fd99-f3ea-45a3-aa51-11b12a5c3691",
+        "id": "4a2d2cec-30ec-4865-9e0b-a5122538e9f9",
         "type": "scale",
         "hex": "#5F1CF2",
         "name": "Delorean",
         "value": 0
        },
        {
-        "id": "2ee25ce0-ca9c-431f-98e1-29d83545794b",
+        "id": "c3b84cc7-07eb-4694-806f-ca4e7ad65776",
         "type": "scale",
         "hex": "#4CE09A",
         "name": "Delorean",
@@ -511,7 +511,7 @@
    },
    {
     "type": "view",
-    "id": "059c33986b6f7000",
+    "id": "05948fa659d07000",
     "attributes": {
      "name": "Fill Level of City Water Tank",
      "properties": {
@@ -598,7 +598,7 @@
    },
    {
     "type": "view",
-    "id": "059c339873af7000",
+    "id": "05948fa662107000",
     "attributes": {
      "name": "Fill Level of Tank A1",
      "properties": {
@@ -685,7 +685,7 @@
    },
    {
     "type": "view",
-    "id": "059c33987b2f7000",
+    "id": "05948fa669107000",
     "attributes": {
      "name": "Current Status of Valve V2",
      "properties": {
@@ -693,7 +693,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V2\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -740,7 +740,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398806f7000",
+    "id": "05948fa671d07000",
     "attributes": {
      "name": "Flow Rate Valve V1",
      "properties": {
@@ -788,7 +788,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398886f7000",
+    "id": "05948fa67a507000",
     "attributes": {
      "name": "Current Status of Valve V1",
      "properties": {
@@ -796,7 +796,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V1\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -843,7 +843,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398916f7000",
+    "id": "05948fa682d07000",
     "attributes": {
      "name": "Current Status of Valve V3",
      "properties": {
@@ -851,7 +851,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V3\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -898,7 +898,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398972f7000",
+    "id": "05948fa68c107000",
     "attributes": {
      "name": "Current Status of Valve V4",
      "properties": {
@@ -906,7 +906,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.valve == \"V4\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -953,7 +953,7 @@
    },
    {
     "type": "view",
-    "id": "059c33989eef7000",
+    "id": "05948fa694907000",
     "attributes": {
      "name": "Fill Level of Tank B1",
      "properties": {
@@ -1040,7 +1040,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398a6af7000",
+    "id": "05948fa69c107000",
     "attributes": {
      "name": "Fill Level of Tank A2",
      "properties": {
@@ -1127,7 +1127,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398acaf7000",
+    "id": "05948fa6a5107000",
     "attributes": {
      "name": "Fill Level of Tank B2",
      "properties": {
@@ -1214,7 +1214,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398b4af7000",
+    "id": "05948fa6ae107000",
     "attributes": {
      "name": "Flow Rate Valve V2",
      "properties": {
@@ -1262,7 +1262,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398bc6f7000",
+    "id": "05948fa6b6d07000",
     "attributes": {
      "name": "Flow Rate Valve V3",
      "properties": {
@@ -1310,7 +1310,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398c2af7000",
+    "id": "05948fa6c0507000",
     "attributes": {
      "name": "Flow Rate Valve V4",
      "properties": {
@@ -1358,7 +1358,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398caaf7000",
+    "id": "05948fa6c8907000",
     "attributes": {
      "name": "Total flow rate",
      "properties": {
@@ -1366,7 +1366,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"flow_rate\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> last()  \n  |> group()\n  |> sum(column: \"_value\")\n  \n\n",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -1390,16 +1390,9 @@
        {
         "id": "base",
         "type": "text",
-        "hex": "#DC4E58",
-        "name": "fire",
-        "value": 0
-       },
-       {
-        "id": "6189bce5-335f-4b1f-877b-7a7d4d242e89",
-        "type": "text",
         "hex": "#4ED8A0",
         "name": "rainforest",
-        "value": 1
+        "value": 0
        }
       ],
       "decimalPlaces": {
@@ -1413,7 +1406,7 @@
    },
    {
     "type": "view",
-    "id": "059c3398d2af7000",
+    "id": "05948fa6d0507000",
     "attributes": {
      "name": "Open valve(s)",
      "properties": {
@@ -1421,7 +1414,7 @@
       "type": "single-stat",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"valve_state\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> last()\n  |> map(fn: (r) => ({\n      r with\n      _value:\n      if r._value == true then 1\n      else 0\n    }))  \n  |> group()  \n  |> sum(column: \"_value\")  \n",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -1450,7 +1443,7 @@
         "value": 0
        },
        {
-        "id": "05bfd0dd-6076-4fd4-937b-862ac315db8f",
+        "id": "d4637541-b06d-48a1-8d84-343e9350d81e",
         "type": "text",
         "hex": "#4ED8A0",
         "name": "rainforest",
@@ -1468,14 +1461,14 @@
    },
    {
     "type": "view",
-    "id": "059c3398d8af7000",
+    "id": "05948fa6d9107000",
     "attributes": {
      "name": "Level difference every minute",
      "properties": {
       "shape": "chronograf-v2",
       "queries": [
        {
-        "text": "actualMeanLevel = from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank == \"city_water\")\n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)\n  \n  \npreMeanLevel = actualMeanLevel\n  |> timeShift(duration: -1m)\n\njoin(\n  tables: {pre:preMeanLevel, actual:actualMeanLevel},\n  on: [\"_time\"]\n) |> map(fn: (r) => ({\n    _time: r._time,\n    _value:  r._value_pre - r._value_actual\n    }))\n",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -1522,21 +1515,21 @@
       "geom": "line",
       "colors": [
        {
-        "id": "0673bbc0-dd5a-42c0-ad96-c83e805477c0",
+        "id": "096e817b-be5b-4db6-8100-f9b8bd0e915b",
         "type": "scale",
         "hex": "#FD7A5D",
         "name": "Delorean",
         "value": 0
        },
        {
-        "id": "6456fd99-f3ea-45a3-aa51-11b12a5c3691",
+        "id": "4a2d2cec-30ec-4865-9e0b-a5122538e9f9",
         "type": "scale",
         "hex": "#5F1CF2",
         "name": "Delorean",
         "value": 0
        },
        {
-        "id": "2ee25ce0-ca9c-431f-98e1-29d83545794b",
+        "id": "c3b84cc7-07eb-4694-806f-ca4e7ad65776",
         "type": "scale",
         "hex": "#4CE09A",
         "name": "Delorean",
@@ -1555,14 +1548,14 @@
    },
    {
     "type": "view",
-    "id": "059c3398e06f7000",
+    "id": "05948fa6e1d07000",
     "attributes": {
-     "name": "Fill Level of Tanks",
+     "name": "Total Tanks' Levels",
      "properties": {
       "shape": "chronograf-v2",
       "queries": [
        {
-        "text": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"fill_level\")\n  |> filter(fn: (r) => r._field == \"value\")\n  |> filter(fn: (r) => r.tank != \"city_water\") \n  |> aggregateWindow(every: 1m, fn: mean, createEmpty: false)\n  |> pivot(rowKey: [\"_time\"], columnKey: [\"tank\"], valueColumn: \"_value\")\n  |> map(fn: (r) => ({ r with _value : r.A1 + r.A2 + r.B1 + r.B2 }))",
+        "text": "",
         "editMode": "advanced",
         "name": "",
         "builderConfig": {
@@ -1609,21 +1602,21 @@
       "geom": "line",
       "colors": [
        {
-        "id": "83f24904-7c30-4bbe-9768-53f67dec34e4",
+        "id": "d7f4090c-5bab-4f27-9dcb-5850e1ef3e71",
         "type": "scale",
         "hex": "#74D495",
         "name": "Atlantis",
         "value": 0
        },
        {
-        "id": "1bb7412b-ab60-4d2c-a7c2-b2652d85c22b",
+        "id": "0573bbd2-83f2-4246-8f83-240ab7eef78a",
         "type": "scale",
         "hex": "#3F3FBA",
         "name": "Atlantis",
         "value": 0
        },
        {
-        "id": "806d6fcd-f7d4-4ed1-adfe-94598e576e99",
+        "id": "868ed8a5-cc92-40c8-b249-5a46187dc129",
         "type": "scale",
         "hex": "#FF4D9E",
         "name": "Atlantis",
