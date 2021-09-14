@@ -1,0 +1,15 @@
+iot-oven,sensor=S1 temperature=290,humidity=30 1631620800000000000
+iot-oven,sensor=S2 temperature=105,humidity=55 1631620815000000000
+iot-oven,sensor=S2 temperature=110,humidity=60 1631620845000000000
+iot-oven,sensor=S1 temperature=305,humidity=38 1631620860000000000
+iot-oven,sensor=S2 temperature=120,humidity=65 1631620875000000000
+iot-oven,sensor=S2 temperature=115,humidity=60 1631620905000000000
+iot-oven,sensor=S1 temperature=280,humidity=45 1631620920000000000
+iot-oven,sensor=S2 temperature=110,humidity=67 1631620935000000000
+iot-oven,sensor=S2 temperature=115,humidity=72 1631620965000000000
+iot-oven,sensor=S1 temperature=280,humidity=22 1631620980000000000
+iot-oven,sensor=S2 temperature=95,humidity=65 1631620995000000000
+iot-oven,sensor=S2 temperature=90,humidity=60  1631621025000000000
+iot-oven,sensor=S1 temperature=285,humidity=32 1631621040000000000
+iot-oven,sensor=S2 temperature=100,humidity=55 1631621055000000000
+iot-oven,sensor=S2 temperature=105,humidity=60 1631621085000000000

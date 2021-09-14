@@ -1,4 +1,4 @@
-# Flux Training - Virtual - SF 2020 - Bootcamp
+# Flux 101 Training - Bootcamp
 
 ## Authors
 
