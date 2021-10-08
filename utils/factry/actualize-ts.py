@@ -2,11 +2,16 @@ import datetime
 import time
 import pytz
 import os
+import sys
 
 try:
-    #e.g. python actualize-ts.py 2021-09-14 12:00 GMT
-    new_dt = datetime.datetime.strptime(sys.argv[1], '%Y-%m-%d %H:%M %Z')
-except:
+    #e.g. python actualize-ts.py "2021-09-14 12:00 GMT"
+    print(sys.argv[1])
+    new_dt = datetime.datetime.strptime(sys.argv[1], '%Y-%m-%d %H:%M')
+    timezone = pytz.timezone("UTC")
+    new_dt = timezone.localize(new_dt)
+except Exception as e: 
+    print(e)
     new_dt = datetime.datetime.combine(
         datetime.date.today(), 
         datetime.time(12, 0),
@@ -40,6 +45,6 @@ for filename in os.listdir(input_basepath):
         fr.writelines(new_lines)
         fr.close()
 
-        print("{} actualized rows written to {} file. Now data starts at {}.".format(len(new_lines),output_basepath + filename, new_dt))
+        print("{} actualized rows written to {} file. Now data starts at {} GMT.".format(len(new_lines),output_basepath + filename, new_dt))
     else:
         print("{} can't be processed".format(filename))

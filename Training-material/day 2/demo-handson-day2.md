@@ -208,8 +208,8 @@ pizzas = sql.from(
   dataSourceName: "postgresql://qcro:qc-readonly@qc-pg.c30roki0vo0h.eu-west-1.rds.amazonaws.com:5432/pizza-erp?sslmode=disable",
   query:"SELECT * 
          FROM oven 
-         WHERE enteringtime/1000000000 >= extract(epoch from timestamp '2021-09-14T12:00:00') and
-              enteringtime/1000000000 < extract(epoch from timestamp '2021-09-14T12:50:00')
+         WHERE enteringtime/1000000000 >= extract(epoch from timestamp '2021-10-11T12:00:00') and
+              enteringtime/1000000000 < extract(epoch from timestamp '2021-10-11T12:50:00')
         "
 ) 
 
