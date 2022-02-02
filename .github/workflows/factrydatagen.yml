@@ -24,6 +24,10 @@ jobs:
         run: |
           python ./utils/factry/actualize-ts.py
           zip -r actualized-data.zip ./utils/factry/actualized-data
+      - name: autocommit new files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Data Actualized
       - name: Generate release tag
         id: tag
         run: |
