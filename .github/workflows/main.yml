@@ -3,6 +3,7 @@ name: py
 on:
   schedule:
     - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+  workflow_dispatch:
 
 jobs:
   build:
