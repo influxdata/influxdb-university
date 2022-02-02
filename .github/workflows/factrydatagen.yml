@@ -29,6 +29,13 @@ jobs:
             newContent=`cat ./utils/factry/actualized-data/flow-rate-lp.txt`
             perl -0777 -i -pe "s/(\`\`\`flowstart\\n).*(\\n\`\`\`\n\#\# Fill Level)/\$1$newContent\$2/s" README.md
             newContent=`cat ./utils/factry/actualized-data/fill-level-lp.txt`
+            perl -0777 -i -pe "s/(\`\`\`fillstart\\n).*(\\n\`\`\`\n\#\# Pump Speed)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/pump-speed-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`pumpstart\\n).*(\\n\`\`\`\n\#\# Valve State)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/valve-state-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`valvestart\\n).*(\\n\`\`\`\n\#\# Oven Data)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/oven-data.txt`
+            #perl -0777 -i -pe "s/(\`\`\`ovenstart\\n).*(\\n\`\`\`\n)/\$1$newContent\$2/s" README.md
       - name: autocommit new files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
