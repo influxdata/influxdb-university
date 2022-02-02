@@ -32,42 +32,42 @@ Both sensors send a temperature measurement every minute, but are not synchronis
 
 measurement|sensor|temperature|humidity|ts|
 |-----------|------|-----------|--------|---|
-|iot-oven|S1|290|30|1633953600000000000|
-|iot-oven|S2|105|55|1633953615000000000|
-|iot-oven|S1|305|38|1633953660000000000|
-|iot-oven|S2|120|65|1633953675000000000|
+|iot-oven|S1|290|30|1636372800000000000|
+|iot-oven|S2|105|55|1636372815000000000|
+|iot-oven|S1|305|38|1636372860000000000|
+|iot-oven|S2|120|65|1636372875000000000|
 
 ### Solution
 
 ```
-iot-oven,sensor=S1 temperature=290,humidity=30 1633953600000000000
-iot-oven,sensor=S2 temperature=105,humidity=55 1633953615000000000
-iot-oven,sensor=S1 temperature=305,humidity=38 1633953660000000000
-iot-oven,sensor=S2 temperature=120,humidity=65 1633953675000000000
+iot-oven,sensor=S1 temperature=290,humidity=30 1636372800000000000
+iot-oven,sensor=S2 temperature=105,humidity=55 1636372815000000000
+iot-oven,sensor=S1 temperature=305,humidity=38 1636372860000000000
+iot-oven,sensor=S2 temperature=120,humidity=65 1636372875000000000
 ```
 
 ### Complete set of data to be loaded into the training bucket
 ```
-iot-oven,sensor=S1 temperature=290,humidity=30 1633953600000000000
-iot-oven,sensor=S2 temperature=105,humidity=55 1633953615000000000
-iot-oven,sensor=S2 temperature=110,humidity=60 1633953645000000000
-iot-oven,sensor=S1 temperature=305,humidity=38 1633953660000000000
-iot-oven,sensor=S2 temperature=120,humidity=65 1633953675000000000
-iot-oven,sensor=S2 temperature=115,humidity=60 1633953705000000000
-iot-oven,sensor=S1 temperature=280,humidity=45 1633953720000000000
-iot-oven,sensor=S2 temperature=110,humidity=67 1633953735000000000
-iot-oven,sensor=S2 temperature=115,humidity=72 1633953765000000000
-iot-oven,sensor=S1 temperature=280,humidity=22 1633953780000000000
-iot-oven,sensor=S2 temperature=95,humidity=65 1633953795000000000
-iot-oven,sensor=S2 temperature=90,humidity=60  1633953825000000000
-iot-oven,sensor=S1 temperature=285,humidity=32 1633953840000000000
-iot-oven,sensor=S2 temperature=100,humidity=55 1633953855000000000
-iot-oven,sensor=S2 temperature=105,humidity=60 1633953885000000000
+iot-oven,sensor=S1 temperature=290,humidity=30 1636372800000000000
+iot-oven,sensor=S2 temperature=105,humidity=55 1636372815000000000
+iot-oven,sensor=S2 temperature=110,humidity=60 1636372845000000000
+iot-oven,sensor=S1 temperature=305,humidity=38 1636372860000000000
+iot-oven,sensor=S2 temperature=120,humidity=65 1636372875000000000
+iot-oven,sensor=S2 temperature=115,humidity=60 1636372905000000000
+iot-oven,sensor=S1 temperature=280,humidity=45 1636372920000000000
+iot-oven,sensor=S2 temperature=110,humidity=67 1636372935000000000
+iot-oven,sensor=S2 temperature=115,humidity=72 1636372965000000000
+iot-oven,sensor=S1 temperature=280,humidity=22 1636372980000000000
+iot-oven,sensor=S2 temperature=95,humidity=65 1636372995000000000
+iot-oven,sensor=S2 temperature=90,humidity=60  1636373025000000000
+iot-oven,sensor=S1 temperature=285,humidity=32 1636373040000000000
+iot-oven,sensor=S2 temperature=100,humidity=55 1636373055000000000
+iot-oven,sensor=S2 temperature=105,humidity=60 1636373085000000000
 ``` 
 
 **Note: Data Time Range**
-> Start Time: 2021-10-11 12:00:00 GMT (2021-10-11T12:00:00Z)
-> End Time: 2021-10-11 12:05:00 GMT (2021-10-11T12:05:00Z)
+> Start Time: 2021-11-08 12:00:00 GMT (2021-11-08T12:00:00Z)
+> End Time: 2021-11-08 12:05:00 GMT (2021-11-08T12:05:00Z)
 
 ## First Query (DEMO)
 
@@ -85,7 +85,7 @@ from(bucket: "training")
 #### Extract all the measurements in a given range
 ##### Absolute
 
-###### Use a custom time range from the UI: Start: 2021-10-11 12:00:00, stop: 2021-10-11 12:05:00)
+###### Use a custom time range from the UI: Start: 2021-11-08 12:00:00, stop: 2021-11-08 12:05:00)
 ```
 from(bucket: "training")
   |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -94,7 +94,7 @@ from(bucket: "training")
 ###### Specify time range in the query
 ```
 from(bucket: "training")
-  |> range(start: 2021-10-11T12:00:00Z, stop: 2021-10-11T12:05:00Z)
+  |> range(start: 2021-11-08T12:00:00Z, stop: 2021-11-08T12:05:00Z)
 ```
 
 ##### Relative
