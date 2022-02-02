@@ -19,7 +19,7 @@ jobs:
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v3
         with:
-            path: "/utils/factry/requirements.txt"
+            path: "./utils/factry/requirements.txt"
       - name: execute py script 
         run: |
           python ./utils/factry/actualize-ts.py
