@@ -45,10 +45,3 @@ jobs:
             ./utils/factry/actualized-data/oven-data.txt
             ./utils/factry/actualized-data/pump-speed-lp.txt
             ./utils/factry/actualized-data/valve-state-lp.txt
-      - name: udate readme
-        uses: tokusumi/markdown-embed-code@main
-        with:
-          markdown: "README.md"
-          token: ${{ secrets.GITHUB_TOKEN }}
-          message: "synchronizing Readme"
-          silent: true
