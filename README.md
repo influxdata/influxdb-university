@@ -41,3 +41,14 @@ flow_rate,tank=city_water,valve=V4 value=0 1643808881000000000
 flow_rate,tank=city_water,valve=V2 value=0 1643808956000000000
 ```
 ## Fill Level
+```fillstart
+```
+## Pump Speed
+```pumpstart
+```
+## Valve State
+```valvestart
+```
+## Oven Data
+```ovenstart
+```
