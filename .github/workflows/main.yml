@@ -36,4 +36,8 @@ jobs:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           files: |
             actualized-data.zip
-            book.zip
+            fill-level-lp.txt
+            flow-rate-lp.txt
+            oven-data.txt
+            pump-speed-lp.txt
+            valve-state-lp.txt
