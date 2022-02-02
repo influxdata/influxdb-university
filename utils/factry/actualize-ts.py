@@ -19,8 +19,8 @@ except Exception as e:
 
 new_dt_ms = int(new_dt.timestamp()*1000000000)
 
-input_basepath='original-data/'
-output_basepath='actualized-data/'
+input_basepath='./utils/factry/original-data/'
+output_basepath='./utils/factry/actualized-data/'
 
 for filename in os.listdir(input_basepath):
 
