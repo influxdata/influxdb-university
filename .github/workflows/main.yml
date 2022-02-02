@@ -36,8 +36,8 @@ jobs:
           tag_name: ${{ steps.tag.outputs.release_tag }}
           files: |
             actualized-data.zip
-            fill-level-lp.txt
-            flow-rate-lp.txt
-            oven-data.txt
-            pump-speed-lp.txt
-            valve-state-lp.txt
+            ./utils/factry/actualized-data/fill-level-lp.txt
+            ./utils/factry/actualized-data/flow-rate-lp.txt
+            ./utils/factry/actualized-data/oven-data.txt
+            ./utils/factry/actualized-data/pump-speed-lp.txt
+            ./utils/factry/actualized-data/valve-state-lp.txt
