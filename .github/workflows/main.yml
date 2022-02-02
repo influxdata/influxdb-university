@@ -23,3 +23,17 @@ jobs:
       - name: execute py script 
         run: |
           python ./utils/factry/actualize-ts.py
+          zip -r actualized-data.zip ./utils/factry/actualized-data
+      - name: Generate release tag
+        id: tag
+        run: |
+          echo "::set-output name=release_tag::UserBuild_$(date +"%Y.%m.%d_%H-%M")"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: |
+            actualized-data.zip
+            book.zip
