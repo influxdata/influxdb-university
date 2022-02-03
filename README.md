@@ -2,6 +2,8 @@
 Material from the Flux training class of the InfluxDays 2019 in San Francisco
 
 
+<script src="https://gist.github.com/riccardotommasini/c7d3e1bf11965bdc3a7f04b1ccb3d1ef.js"></script>
+
 ## Flow Rate
 ```flowstart
 flow_rate,tank=city_water,valve=V1 value=100 1643889600000000000
