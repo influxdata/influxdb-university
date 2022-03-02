@@ -1,5 +1,4 @@
-# university
-Welcome to InfluxDB University!
+# Welcome to InfluxDB University!
 
 To learn about InfluxDB, Telegraf and Flux sign up for free training courses at influxdbu.com
 
