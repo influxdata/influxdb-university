@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Readme
+
+# Controls when the workflow will run
+on:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Update Readme
+        run: |
+            newContent=`cat ./utils/factry/actualized-data/flow-rate-lp.txt`
+            perl -0777 -i -pe "s/(\`\`\`flowstart\\n).*(\\n\`\`\`\n\#\# Fill Level)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/fill-level-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`fillstart\\n).*(\\n\`\`\`\n\#\# Pump Speed)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/pump-speed-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`pumpstart\\n).*(\\n\`\`\`\n\#\# Valve State)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/valve-state-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`valvestart\\n).*(\\n\`\`\`\n\#\# Oven Data)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/oven-data.txt`
+            #perl -0777 -i -pe "s/(\`\`\`ovenstart\\n).*(\\n\`\`\`\n)/\$1$newContent\$2/s" README.md
+      - name: autocommit new files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Data Actualized
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.TOKEN }}
+          gist_id: "c7d3e1bf11965bdc3a7f04b1ccb3d1ef"
+          gist_description: "flow-rate-lp"
+          gist_file_name: flow-rate-lp.txt
+          file_path: ./utils/factry/actualized-data/flow-rate-lp.txt

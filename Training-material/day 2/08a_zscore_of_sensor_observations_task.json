@@ -1,0 +1,26 @@
+{
+ "meta": {
+  "version": "1",
+  "type": "task",
+  "name": "Zscore of sensor observations-Template",
+  "description": "template created from task: Zscore of sensor observations"
+ },
+ "content": {
+  "data": {
+   "type": "task",
+   "attributes": {
+    "status": "active",
+    "name": "Zscore of sensor observations",
+    "flux": "import \"date\"\nimport \"math\"\n\noption v = {bucket: \"\", timeRangeStart: -15m, timeRangeStop: now()}\noption task = {name: \"Zscore of sensor observations\", every: 5m}\n\nmovingAvg = from(bucket: \"training\")\n\t|> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n\t|> aggregateWindow(every: 5m, fn: mean, createEmpty: false)\n\t|> filter(fn: (r) =>\n\t\t(r._stop != r._time))\n\t|> drop(columns: [\"_start\", \"_stop\", \"host\"])\nmovingStddev = from(bucket: \"training\")\n\t|> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n\t|> aggregateWindow(every: 5m, fn: stddev, createEmpty: false)\n\t|> filter(fn: (r) =>\n\t\t(r._stop != r._time))\n\t|> drop(columns: [\"_start\", \"_stop\", \"host\"])\njoin1 = join(tables: {avg: movingAvg, stddev: movingStddev}, on: [\"_field\", \"_measurement\", \"sensor\"], method: \"inner\")\n\t|> filter(fn: (r) =>\n\t\t(r._time_avg == r._time_stddev))\n\t|> rename(columns: {_time_avg: \"_time\"})\n\t|> drop(columns: [\"_time_stddev\"])\nallData = from(bucket: \"training\")\n\t|> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n\t|> drop(columns: [\"_start\", \"_stop\", \"host\"])\njoin2 = join(tables: {all: allData, j: join1}, on: [\"_field\", \"_measurement\", \"sensor\"])\n\t|> filter(fn: (r) =>\n\t\t(uint(v: r._time_all) - uint(v: r._time_j) > 0))\n\t|> filter(fn: (r) =>\n\t\t(uint(v: r._time_all) - uint(v: r._time_j) <= 5 * 60 * 1000000000))\n\t|> rename(columns: {_time_all: \"_time\"})\n\t|> map(fn: (r) =>\n\t\t({r with _value: math.abs(x: (r._value - r._value_avg) / r._value_stddev)}))\n\njoin2\n\t|> to(bucket: \"task-output\", org: \"emanuele.dellavalle@quantiaconsulting.com\")",
+    "every": "5m"
+   },
+   "relationships": {
+    "label": {
+     "data": []
+    }
+   }
+  },
+  "included": []
+ },
+ "labels": []
+}

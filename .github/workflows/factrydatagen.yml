@@ -1,0 +1,59 @@
+name: FactryDataGen
+    
+on:
+  schedule:
+    - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v3
+        with:
+            path: "./utils/factry/requirements.txt"
+      - name: execute py script 
+        run: |
+          python ./utils/factry/actualize-ts.py
+          zip -r actualized-data.zip ./utils/factry/actualized-data
+      - name: Update Readme
+        run: |
+            newContent=`cat ./utils/factry/actualized-data/flow-rate-lp.txt`
+            perl -0777 -i -pe "s/(\`\`\`flowstart\\n).*(\\n\`\`\`\n\#\# Fill Level)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/fill-level-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`fillstart\\n).*(\\n\`\`\`\n\#\# Pump Speed)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/pump-speed-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`pumpstart\\n).*(\\n\`\`\`\n\#\# Valve State)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/valve-state-lp.txt`
+            #perl -0777 -i -pe "s/(\`\`\`valvestart\\n).*(\\n\`\`\`\n\#\# Oven Data)/\$1$newContent\$2/s" README.md
+            #newContent=`cat ./utils/factry/actualized-data/oven-data.txt`
+            #perl -0777 -i -pe "s/(\`\`\`ovenstart\\n).*(\\n\`\`\`\n)/\$1$newContent\$2/s" README.md
+      - name: autocommit new files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Data Actualized
+      - name: Generate release tag
+        id: tag
+        run: |
+          echo "::set-output name=release_tag::Actualized_Data_$(date +"%Y.%m.%d_%H-%M")"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          files: |
+            actualized-data.zip
+            ./utils/factry/actualized-data/fill-level-lp.txt
+            ./utils/factry/actualized-data/flow-rate-lp.txt
+            ./utils/factry/actualized-data/oven-data.txt
+            ./utils/factry/actualized-data/pump-speed-lp.txt
+            ./utils/factry/actualized-data/valve-state-lp.txt
