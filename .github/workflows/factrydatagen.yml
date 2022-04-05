@@ -43,7 +43,7 @@ jobs:
       - name: Generate release tag
         id: tag
         run: |
-          echo "::set-output name=release_tag::Actualized_Data_$(date +"%Y.%m.%d_%H-%M")"
+          echo "::set-output name=release_tag::103_beginner_flux_$(date +"%Y.%m.%d_%H-%M")"
       - name: Release
         uses: softprops/action-gh-release@v1
         env:
