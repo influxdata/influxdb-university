@@ -1,0 +1,751 @@
+[
+    {
+        "apiVersion": "influxdata.com/v2alpha1",
+        "kind": "Dashboard",
+        "metadata": {
+            "name": "flamboyant-hellman-816001"
+        },
+        "spec": {
+            "charts": [
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Fill Level City Water Tank",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "yCol": "_value"
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "o1bNt_04EacEGQ9qBGRPC",
+                            "name": "Solid White",
+                            "type": "scale",
+                            "hex": "#fff"
+                        },
+                        {
+                            "id": "Vw2lUH5izpAZ5PCuyrS-q",
+                            "name": "Solid White",
+                            "type": "scale",
+                            "hex": "#fff"
+                        },
+                        {
+                            "id": "w7-wo529d1UXAVW_Yf9bT",
+                            "name": "Solid White",
+                            "type": "scale",
+                            "hex": "#fff"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Level difference every minute",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "dND1KLdm7KOt5pL2Z77e4",
+                            "name": "Solid Red",
+                            "type": "scale",
+                            "hex": "#DC4E58"
+                        },
+                        {
+                            "id": "CjBCRKe2eUBiOKfneHJ1r",
+                            "name": "Solid Red",
+                            "type": "scale",
+                            "hex": "#DC4E58"
+                        },
+                        {
+                            "id": "A_jxvr4UWabeUZtTmy25o",
+                            "name": "Solid Red",
+                            "type": "scale",
+                            "hex": "#DC4E58"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Pump Speed",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "yCol": "_value",
+                    "yPos": 6
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "honeydew",
+                            "type": "text",
+                            "hex": "#7CE490"
+                        }
+                    ],
+                    "decimalPlaces": 0,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Open valve(s)",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 2
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Total Tank's level",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "xPos": 2,
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "thunder",
+                            "type": "text",
+                            "hex": "#FFD255"
+                        }
+                    ],
+                    "decimalPlaces": 2,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Flow Rate V1 (Clone)",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 2,
+                    "yPos": 6
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "viridian",
+                            "type": "text",
+                            "hex": "#32B08C"
+                        }
+                    ],
+                    "decimalPlaces": 0,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Current Status of Valve V1",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 4
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Fill Level A1",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "shade": true,
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "xPos": 4,
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "pineapple",
+                            "type": "text",
+                            "hex": "#FFB94A"
+                        }
+                    ],
+                    "decimalPlaces": 2,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Flow Rate V1",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 4,
+                    "yPos": 6
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "viridian",
+                            "type": "text",
+                            "hex": "#32B08C"
+                        }
+                    ],
+                    "decimalPlaces": 0,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Current Status of Valve V2",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 6
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Fill Level A2",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "shade": true,
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "xPos": 6,
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "pineapple",
+                            "type": "text",
+                            "hex": "#FFB94A"
+                        }
+                    ],
+                    "decimalPlaces": 2,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Flow Rate V2",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 6,
+                    "yPos": 6
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "viridian",
+                            "type": "text",
+                            "hex": "#32B08C"
+                        }
+                    ],
+                    "decimalPlaces": 0,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Current Status of Valve V3",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 8
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Fill Level B1",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "shade": true,
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "xPos": 8,
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "pineapple",
+                            "type": "text",
+                            "hex": "#FFB94A"
+                        }
+                    ],
+                    "decimalPlaces": 2,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Flow Rate V3",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 8,
+                    "yPos": 6
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "viridian",
+                            "type": "text",
+                            "hex": "#32B08C"
+                        }
+                    ],
+                    "decimalPlaces": 0,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Current Status of Valve V4",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 10
+                },
+                {
+                    "axes": [
+                        {
+                            "base": "10",
+                            "name": "x",
+                            "scale": "linear"
+                        },
+                        {
+                            "base": "10",
+                            "name": "y",
+                            "scale": "linear"
+                        }
+                    ],
+                    "colorMapping": {},
+                    "colorizeRows": true,
+                    "colors": [
+                        {
+                            "id": "cEbb9XPWlQx2-FCaRR5Qg",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#31C0F6"
+                        },
+                        {
+                            "id": "JUk9F-t5aoWb-Ll1F785n",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#A500A5"
+                        },
+                        {
+                            "id": "IeG8oK2iRujnJNkBYm71c",
+                            "name": "Nineteen Eighty Four",
+                            "type": "scale",
+                            "hex": "#FF7E27"
+                        }
+                    ],
+                    "geom": "line",
+                    "height": 3,
+                    "hoverDimension": "auto",
+                    "kind": "Xy",
+                    "legendColorizeRows": true,
+                    "legendOpacity": 1,
+                    "legendOrientationThreshold": 100000000,
+                    "name": "Fill Level B2",
+                    "opacity": 1,
+                    "orientationThreshold": 100000000,
+                    "position": "overlaid",
+                    "queries": [
+                        {
+                          "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "shade": true,
+                    "staticLegend": {
+                        "colorizeRows": true,
+                        "opacity": 1,
+                        "orientationThreshold": 100000000,
+                        "widthRatio": 1
+                    },
+                    "width": 2,
+                    "widthRatio": 1,
+                    "xCol": "_time",
+                    "xPos": 10,
+                    "yCol": "_value",
+                    "yPos": 3
+                },
+                {
+                    "colors": [
+                        {
+                            "id": "base",
+                            "name": "pineapple",
+                            "type": "text",
+                            "hex": "#FFB94A"
+                        }
+                    ],
+                    "decimalPlaces": 2,
+                    "height": 3,
+                    "kind": "Single_Stat",
+                    "name": "Flow Rate V4",
+                    "queries": [
+                        {
+                            "query": "from(bucket: \"training\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> map(fn: (r) => ({\n      r with\n      _value: -1\n    }))"
+                        }
+                    ],
+                    "staticLegend": {},
+                    "width": 2,
+                    "xPos": 10,
+                    "yPos": 6
+                }
+            ],
+            "name": "Factry Water Tank - Day 1"
+        }
+    }
+]
