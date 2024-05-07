@@ -17,7 +17,7 @@ import "sql"
 
 pizzas = sql.from(
   driverName: "postgres",
-  dataSourceName: "postgresql://postgres:quantia-allianz@52.30.211.196:5432/pizza-erp?sslmode=disable",
+  dataSourceName: "postgresql://user:password@host:5432/pizza-erp?sslmode=disable",
   query:"SELECT * 
          FROM oven 
          WHERE enteringtime/1000000000 >= extract(epoch from timestamp '2020-07-21T12:00:00') and
